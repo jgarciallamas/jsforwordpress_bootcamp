@@ -120,3 +120,17 @@ units: [
                   icn: "temp.gif",
                   id: 176489
 ```
+
+## Approach -- Pseudocode
+
+My first approach would be using React, create-react-app behind the scene
+
+1.	Request information of all the properties that a particular user is authorized to access, we would use the request type “props”.
+
+2.	Show the name of the properties using a link for each name. This information would be displayed so that the user can click on any of the properties shown there.
+
+3.	The client can click on a particular property and that should trigger another request to that particular property, we would use the request type “propstat”.
+
+4.	The information we would fetch from the previous point would be displayed on the page where we would add a “More Info” button.
+
+5.	A click on the “More Info” button would trigger another request, “rmsmap” request, where more information about that particular property would be displayed.
