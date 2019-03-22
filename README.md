@@ -1,12 +1,12 @@
 # jsforwordpress_bootcamp
 JavaScript for Wordpress Bootacamp project Jan-March 2019
 
-#•	Overview
+#Overview
 Accesing to the Ranch Systems online database through its JSON web service interface. 
 
 The RS web services implementation is RESTful, it uses simple HTTP requests like GET and POST, I’m going to focus on GET requests though so that I can fetch and show the required information.
 
-##• Fetch information using GET requests
+##Fetch information using GET requests
 
 1. Get all properties that a particular user is authorized to access:
 ```
@@ -24,16 +24,17 @@ https://app.ranchsystems.com/rsapp15/jsp?uname=jdoe&pword=qwerty&reqtype=props
 }
 ```
 
-##•	Mandatory Parameters
+##Mandatory Parameters
 
 uname --> User name
 pword --> Password
 reqtype --> Request type. This parameter specifies the request and further parameters may be required as per documentation below.
 
-##•	Request type “props”
+##Request type “props”
 
 Retrieves properties to which user has access.
-No further parameters required.
+**No further parameters required.**
+
 Returns a JSON object with the following members:
 
 ```
@@ -45,11 +46,11 @@ Returns a JSON object with the following members:
 }
 ```
 
-##•	Request type “propstat”
+##Request type “propstat”
 Retrieves status information about a particular property.
 
 Requires the following additional URL parameters:
-prop --> ID of property
+**prop --> ID of property**
 
 Returns a JSON object with the following members:
 
@@ -65,12 +66,12 @@ location: ""
 }
 ```
 
-##•	Request type “rmsmap”
+##Request type “rmsmap”
 
 Retrieves a complete map (actually a tree) of all units and sensors in a property.
 Requires the following additional URL parameters:
 
-prop --> ID of property for which to generate map of sensors.
+**prop --> ID of property for which to generate map of sensors.**
 
 Returns a JSON object with the following members:
 
